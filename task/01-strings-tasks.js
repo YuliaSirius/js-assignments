@@ -117,11 +117,7 @@ function removeLeadingAndTrailingWhitespaces(value) {
  *   'cat', 3 => 'catcatcat'
  */
 function repeatString(value, count) {
-  let result = value;
-  for (let i = 1; i < count; i++) {
-    result += value;
-  }
-  return result;
+  return value.repeat(count);
 }
 
 /**
@@ -375,7 +371,7 @@ function getCardId(value) {
     'Q♠',
     'K♠',
   ].indexOf(value);
-  return result
+  return result;
 }
 
 module.exports = {
